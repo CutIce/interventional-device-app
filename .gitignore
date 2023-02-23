@@ -3,6 +3,13 @@ bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
+build-kinemetic_simulation-Desktop_Qt_5_14_2_MinGW_32_bit-Debug/
+build-kinemetic_simulation-Desktop_Qt_5_14_2_MinGW_64_bit-Debug/
+build-multiThreads-Desktop_Qt_5_14_2_MinGW_64_bit-Debug/
+build-multiThreads-Desktop_Qt_5_14_2_MinGW_64_bit-Release/
+CommDemo 202101172345/
+
+
 
 # Other files and folders
 .settings/

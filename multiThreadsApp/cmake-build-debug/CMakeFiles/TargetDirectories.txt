@@ -1,0 +1,4 @@
+E:/Documents/23SP/graduation_project/qt_app/multiThreadsApp/cmake-build-debug/CMakeFiles/multiThreadsApp.dir
+E:/Documents/23SP/graduation_project/qt_app/multiThreadsApp/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Documents/23SP/graduation_project/qt_app/multiThreadsApp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/Documents/23SP/graduation_project/qt_app/multiThreadsApp/cmake-build-debug/CMakeFiles/multiThreadsApp_autogen.dir

@@ -1,0 +1,11 @@
+# ninja log v5
+4	309	0	CMakeFiles/multiThreadsApp_autogen	f78f04201578fb96
+4	309	0	multiThreadsApp_autogen/mocs_compilation.cpp	f78f04201578fb96
+322	1848	6987491441969341	CMakeFiles/multiThreadsApp.dir/main.cpp.obj	2dd4921939064207
+4	309	0	E:/Documents/23SP/graduation_project/qt_app/multiThreadsApp/cmake-build-debug/CMakeFiles/multiThreadsApp_autogen	f78f04201578fb96
+4	309	0	E:/Documents/23SP/graduation_project/qt_app/multiThreadsApp/cmake-build-debug/multiThreadsApp_autogen/mocs_compilation.cpp	f78f04201578fb96
+310	1710	6987491440603300	CMakeFiles/multiThreadsApp.dir/multiThreadsApp_autogen/mocs_compilation.cpp.obj	d82934c7630aed35
+4	309	0	multiThreadsApp_autogen/include/Form/ui_mainwindow.h	f78f04201578fb96
+1890	2290	6987491444472965	multiThreadsApp.exe	7d4b7df53d25cbd1
+4	309	0	E:/Documents/23SP/graduation_project/qt_app/multiThreadsApp/cmake-build-debug/multiThreadsApp_autogen/include/Form/ui_mainwindow.h	f78f04201578fb96
+329	1890	6987491442398508	CMakeFiles/multiThreadsApp.dir/Source/mainwindow.cpp.obj	457be42ffeccfb8e

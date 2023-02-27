@@ -50,6 +50,7 @@
 #define __INT8_C(c) c
 #define __INT_LEAST8_WIDTH__ 8
 #define __UINT_LEAST64_MAX__ 0xffffffffffffffffULL
+#define QT_OPENGL_LIB 1
 #define __SHRT_MAX__ 0x7fff
 #define __LDBL_MAX__ 1.18973149535723176502126385303097021e+4932L
 #define __FLT64X_MAX_10_EXP__ 4932
@@ -396,6 +397,7 @@
 #define __UINT_FAST16_MAX__ 0xffff
 #define __GCC_ATOMIC_SHORT_LOCK_FREE 2
 #define __INT_LEAST64_WIDTH__ 64
+#define GLEW_STATIC 1
 #define __SSE3__ 1
 #define __UINT_FAST8_TYPE__ unsigned char
 #define __WIN64__ 1

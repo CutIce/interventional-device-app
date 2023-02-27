@@ -26,3 +26,6 @@ CommDemo 202101172345/
 zips/
 build-kinemetic_simulation-Desktop_Qt_5_14_2_MinGW_32_bit-Debug/
 build-kinemetic_simulation-Desktop_Qt_5_14_2_MinGW_64_bit-Debug/
+omega7_com/cmake-build-debug/
+build-omega7_com-Desktop_Qt_5_14_2_MinGW_64_bit-Debug/
+build-omega7_qcom-Desktop_Qt_5_14_2_MinGW_64_bit-Debug/

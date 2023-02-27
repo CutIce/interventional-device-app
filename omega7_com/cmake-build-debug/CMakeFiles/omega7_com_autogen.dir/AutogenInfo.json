@@ -71,7 +71,12 @@
 		"E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake",
 		"E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
 		"E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
-		"D:/Softwares/CLion/CLion 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseArguments.cmake"
+		"D:/Softwares/CLion/CLion 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseArguments.cmake",
+		"E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake",
+		"E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake",
+		"D:/Softwares/CLion/CLion 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindOpenGL.cmake",
+		"D:/Softwares/CLion/CLion 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake",
+		"D:/Softwares/CLion/CLion 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPackageMessage.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "E:/Documents/23SP/graduation_project/qt_app/omega7_com",
 	"DEP_FILE" : "",
@@ -80,7 +85,14 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "E:/Documents/23SP/graduation_project/qt_app/omega7_com/cmake-build-debug/omega7_com_autogen/include",
 	"MOC_COMPILATION_FILE" : "E:/Documents/23SP/graduation_project/qt_app/omega7_com/cmake-build-debug/omega7_com_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : 
+	[
+		"GLEW_STATIC",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_OPENGL_LIB",
+		"QT_WIDGETS_LIB"
+	],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -91,14 +103,20 @@
 	"MOC_INCLUDES" : 
 	[
 		"E:/Documents/23SP/graduation_project/qt_app/omega7_com/include",
+		"E:/Documents/23SP/graduation_project/qt_app/omega7_com/header",
 		"E:/Documents/23SP/graduation_project/qt_app/omega7_com/form",
 		"E:/Softwares/Force Dimension/sdk-3.15.0/externals/Eigen",
+		"E:/Softwares/opengl/freeglut-MinGW-3.0.0-1.mp/freeglut/include",
+		"E:/Softwares/opengl/glfwx64/include",
+		"E:/Softwares/opengl/glad/glad/include",
+		"E:/Softwares/opengl/glew-2.1.0-win32/glew-2.1.0/include",
 		"E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/include",
 		"E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/include/QtCore",
 		"E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/mkspecs/win32-g++",
 		"E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/include/QtWidgets",
 		"E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/include/QtGui",
 		"E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/include/QtANGLE",
+		"E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/include/QtOpenGL",
 		"E:/Softwares/qt/qt_5_14/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++",
 		"E:/Softwares/qt/qt_5_14/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32",
 		"E:/Softwares/qt/qt_5_14/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward",
@@ -136,10 +154,16 @@
 			null
 		],
 		[
-			"E:/Documents/23SP/graduation_project/qt_app/omega7_com/src/forceDimension/sdk_utility.cpp",
+			"E:/Documents/23SP/graduation_project/qt_app/omega7_com/src/QPlot3D.cpp",
 			"MU",
 			null
-		]
+		],
+		[
+			"E:/Documents/23SP/graduation_project/qt_app/omega7_com/src/kinemetic_widget.cpp",
+			"MU",
+			null
+		],
+		[ "E:/Softwares/opengl/glad/glad/src/glad.c", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

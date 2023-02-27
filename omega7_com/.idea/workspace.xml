@@ -21,48 +21,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a318bfd-10d1-4202-bffb-70b157506ac2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/dhdc.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/drdc.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/sdk_utility.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SDK_examples/autocenter.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SDK_examples/autoinit.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SDK_examples/center.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SDK_examples/encoders.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SDK_examples/gravity.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SDK_examples/jacobian.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SDK_examples/mirror.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SDK_examples/multithread.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SDK_examples/robot.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SDK_examples/segment.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SDK_examples/sensor.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SDK_examples/viscosity.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SDK_examples/wrist.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/forceDimension/sdk_utility.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_demo/form/mainwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_demo/header/mianwindow.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_demo/src/SDK_examples/autocenter.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_demo/src/SDK_examples/autoinit.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_demo/src/SDK_examples/center.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_demo/src/SDK_examples/encoders.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_demo/src/SDK_examples/gravity.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_demo/src/SDK_examples/jacobian.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_demo/src/SDK_examples/mirror.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_demo/src/SDK_examples/multithread.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_demo/src/SDK_examples/robot.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_demo/src/SDK_examples/segment.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_demo/src/SDK_examples/sensor.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_demo/src/SDK_examples/viscosity.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_demo/src/SDK_examples/wrist.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_demo/src/mianwindow.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_demo/src/sdk_demo.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiThreads/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../multiThreads/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multiThreads/multiThreads.pro.user" beforeDir="false" afterPath="$PROJECT_DIR$/../multiThreads/multiThreads.pro.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMakeLists.txt.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form/qplot3d.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header/QPlot3D.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header/catheter_kinemetic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header/kinemetic_widget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QPlot3D.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kinemetic_widget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/catheter_kinemetic/catheter_kinemetic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/catheter_kinemetic/kinemetic_widget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/catheter_kinemetic/kinemetic_widget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/form/mainwindow.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/header/mainwindow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/header/sdk_utility.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/include/dhdc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/include/drdc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/lib/forceDimensionSDK/dhdms.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/lib/forceDimensionSDK/dhdms64.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/lib/forceDimensionSDK/drdms.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/lib/forceDimensionSDK/drdms64.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/qpolt3d/QPlot3D.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/qpolt3d/QPlot3D.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/src/mainwindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kinemetic_sim/kinemetic_simulation.pro.user" beforeDir="false" afterPath="$PROJECT_DIR$/../kinemetic_sim/kinemetic_simulation.pro.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-b2c10d67c22215d60cfb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-35c60845a06b0f8934c6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-9e005d909612dc4f9edd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-02-26T04-46-18-0270.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-omega7_com-Debug-d7f2d4b9d20ef5104621.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/omega7_com_autogen.dir/AutogenInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/omega7_com_autogen.dir/AutogenInfo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/omega7_com_autogen.dir/AutogenUsed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/omega7_com_autogen.dir/AutogenUsed.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/omega7_com_autogen.dir/ParseCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/omega7_com_autogen.dir/ParseCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/omega7_com.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/omega7_com_autogen/moc_predefs.h" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/omega7_com_autogen/moc_predefs.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,11 +103,25 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\header" />
+      <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\include" />
+      <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\src" />
+      <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\form" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="omega7_com" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="omega7_com" TARGET_NAME="omega7_com" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="omega7_com" RUN_TARGET_NAME="omega7_com">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -125,7 +138,10 @@
       <updated>1677296380661</updated>
       <workItem from="1677296382142" duration="2387000" />
       <workItem from="1677379379910" duration="13432000" />
-      <workItem from="1677461966828" duration="5323000" />
+      <workItem from="1677461966828" duration="8479000" />
+      <workItem from="1677473661875" duration="8176000" />
+      <workItem from="1677486499399" duration="13359000" />
+      <workItem from="1677505513199" duration="600000" />
     </task>
     <servers />
   </component>

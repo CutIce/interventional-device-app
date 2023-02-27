@@ -1,0 +1,3 @@
+"D:\Softwares\CLion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\omega7_demo.dir/objects.a
+E:\Softwares\qt\qt_5_14\Tools\mingw730_64\bin\ar.exe qc CMakeFiles\omega7_demo.dir/objects.a @CMakeFiles\omega7_demo.dir\objects1.rsp
+E:\Softwares\qt\qt_5_14\Tools\mingw730_64\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\omega7_demo.dir/objects.a -Wl,--no-whole-archive -o omega7_demo.exe -Wl,--out-implib,libomega7_demo.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\omega7_demo.dir\linklibs.rsp

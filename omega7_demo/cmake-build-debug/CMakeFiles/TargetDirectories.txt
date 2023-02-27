@@ -1,0 +1,4 @@
+E:/Documents/23SP/graduation_project/qt_app/omega7_demo/cmake-build-debug/CMakeFiles/omega7_demo.dir
+E:/Documents/23SP/graduation_project/qt_app/omega7_demo/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Documents/23SP/graduation_project/qt_app/omega7_demo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/Documents/23SP/graduation_project/qt_app/omega7_demo/cmake-build-debug/CMakeFiles/omega7_demo_autogen.dir

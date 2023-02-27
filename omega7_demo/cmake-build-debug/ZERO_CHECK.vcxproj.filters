@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\Documents\23SP\graduation_project\qt_app\omega7_demo\cmake-build-debug\CMakeFiles\edcb446c662128cbeb57628bc2d26a2c\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{02F7129B-2ADE-3677-BEB9-641B9DD9579A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

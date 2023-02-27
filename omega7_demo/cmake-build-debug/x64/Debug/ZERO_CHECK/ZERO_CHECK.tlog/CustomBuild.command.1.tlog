@@ -1,0 +1,10 @@
+^E:\DOCUMENTS\23SP\GRADUATION_PROJECT\QT_APP\OMEGA7_DEMO\CMAKE-BUILD-DEBUG\CMAKEFILES\EDCB446C662128CBEB57628BC2D26A2C\GENERATE.STAMP.RULE
+setlocal
+"D:\Softwares\CLion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -SE:/Documents/23SP/graduation_project/qt_app/omega7_demo -BE:/Documents/23SP/graduation_project/qt_app/omega7_demo/cmake-build-debug --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Documents/23SP/graduation_project/qt_app/omega7_demo/cmake-build-debug/omega7_demo.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

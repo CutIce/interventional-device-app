@@ -1,0 +1,17 @@
+# ninja log v5
+1	128	0	CMakeFiles/omega7_demo_autogen	30c4b3a4d51b1902
+1	128	0	omega7_demo_autogen/mocs_compilation.cpp	30c4b3a4d51b1902
+1	128	0	E:/Documents/23SP/graduation_project/qt_app/omega7_demo/cmake-build-release-mingw-qt/CMakeFiles/omega7_demo_autogen	30c4b3a4d51b1902
+1	128	0	E:/Documents/23SP/graduation_project/qt_app/omega7_demo/cmake-build-release-mingw-qt/omega7_demo_autogen/mocs_compilation.cpp	30c4b3a4d51b1902
+139	356	6989985528223128	CMakeFiles/omega7_demo.dir/src/sdk_demo.cpp.obj	9e1177d533578b9e
+145	363	6989985528282975	CMakeFiles/omega7_demo.dir/src/mianwindow.cpp.obj	ed0f6a578051e4ea
+128	364	6989985528282975	CMakeFiles/omega7_demo.dir/omega7_demo_autogen/mocs_compilation.cpp.obj	6cfa4de2b5c558b9
+167	2747	6989985552130937	CMakeFiles/omega7_demo.dir/main.cpp.obj	238621cdc1b3ef04
+4	50	0	CMakeFiles/omega7_demo_autogen	30c4b3a4d51b1902
+4	50	0	omega7_demo_autogen/mocs_compilation.cpp	30c4b3a4d51b1902
+4	50	0	E:/Documents/23SP/graduation_project/qt_app/omega7_demo/cmake-build-release-mingw-qt/CMakeFiles/omega7_demo_autogen	30c4b3a4d51b1902
+4	50	0	E:/Documents/23SP/graduation_project/qt_app/omega7_demo/cmake-build-release-mingw-qt/omega7_demo_autogen/mocs_compilation.cpp	30c4b3a4d51b1902
+5	165	0	CMakeFiles/omega7_demo_autogen	30c4b3a4d51b1902
+5	165	0	omega7_demo_autogen/mocs_compilation.cpp	30c4b3a4d51b1902
+5	165	0	E:/Documents/23SP/graduation_project/qt_app/omega7_demo/cmake-build-release-mingw-qt/CMakeFiles/omega7_demo_autogen	30c4b3a4d51b1902
+5	165	0	E:/Documents/23SP/graduation_project/qt_app/omega7_demo/cmake-build-release-mingw-qt/omega7_demo_autogen/mocs_compilation.cpp	30c4b3a4d51b1902

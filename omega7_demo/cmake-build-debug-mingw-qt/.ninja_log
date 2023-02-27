@@ -1,0 +1,9 @@
+# ninja log v5
+1	91	0	CMakeFiles/omega7_demo_autogen	76b213d0670f3b10
+1	91	0	omega7_demo_autogen/mocs_compilation.cpp	76b213d0670f3b10
+1	91	0	E:/Documents/23SP/graduation_project/qt_app/omega7_demo/cmake-build-debug-mingw-qt/CMakeFiles/omega7_demo_autogen	76b213d0670f3b10
+1	91	0	E:/Documents/23SP/graduation_project/qt_app/omega7_demo/cmake-build-debug-mingw-qt/omega7_demo_autogen/mocs_compilation.cpp	76b213d0670f3b10
+91	163	6989979782961299	CMakeFiles/omega7_demo.dir/omega7_demo_autogen/mocs_compilation.cpp.obj	2e2e0083a2abf495
+96	174	6989979783061033	CMakeFiles/omega7_demo.dir/src/sdk_demo.cpp.obj	8967f506cd6ea7a9
+126	192	6989979783240551	CMakeFiles/omega7_demo.dir/src/mianwindow.cpp.obj	91434287f4f072fd
+102	2863	6989979809899972	CMakeFiles/omega7_demo.dir/main.cpp.obj	5c4826587e64334a

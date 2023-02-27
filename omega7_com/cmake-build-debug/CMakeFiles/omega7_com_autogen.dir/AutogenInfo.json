@@ -81,7 +81,27 @@
 	"CMAKE_SOURCE_DIR" : "E:/Documents/23SP/graduation_project/qt_app/omega7_com",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[
+			"E:/Documents/23SP/graduation_project/qt_app/omega7_com/header/QPlot3D.h",
+			"MU",
+			"6OFTS6FJJP/moc_QPlot3D.cpp",
+			null
+		],
+		[
+			"E:/Documents/23SP/graduation_project/qt_app/omega7_com/header/catheter_kinemetic.h",
+			"MU",
+			"6OFTS6FJJP/moc_catheter_kinemetic.cpp",
+			null
+		],
+		[
+			"E:/Documents/23SP/graduation_project/qt_app/omega7_com/header/kinemetic_widget.h",
+			"MU",
+			"6OFTS6FJJP/moc_kinemetic_widget.cpp",
+			null
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "E:/Documents/23SP/graduation_project/qt_app/omega7_com/cmake-build-debug/omega7_com_autogen/include",
 	"MOC_COMPILATION_FILE" : "E:/Documents/23SP/graduation_project/qt_app/omega7_com/cmake-build-debug/omega7_com_autogen/mocs_compilation.cpp",
@@ -155,6 +175,11 @@
 		],
 		[
 			"E:/Documents/23SP/graduation_project/qt_app/omega7_com/src/QPlot3D.cpp",
+			"MU",
+			null
+		],
+		[
+			"E:/Documents/23SP/graduation_project/qt_app/omega7_com/src/catheter_kinemetic.cpp",
 			"MU",
 			null
 		],

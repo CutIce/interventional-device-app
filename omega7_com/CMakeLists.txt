@@ -3,6 +3,8 @@ cmake_minimum_required(VERSION 3.16)
 
 project(omega7_com)
 
+add_definitions(-w)
+
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
@@ -65,7 +67,7 @@ link_directories(
 
 
 # 设置构建目标
-add_executable(${PROJECT_NAME} main.cpp ${proj_src} ${glad_src})
+add_executable(${PROJECT_NAME} main.cpp ${proj_src} ${glad_src} header/QPlot3D.h header/catheter_kinemetic.h header/kinemetic_widget.h)
 
 
 target_link_libraries(${PROJECT_NAME}

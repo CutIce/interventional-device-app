@@ -21,47 +21,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a318bfd-10d1-4202-bffb-70b157506ac2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form/qplot3d.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/header/QPlot3D.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/header/catheter_kinemetic.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/header/kinemetic_widget.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QPlot3D.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kinemetic_widget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_qcom/catheter_kinemetic/catheter_kinemetic.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_qcom/catheter_kinemetic/kinemetic_widget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_qcom/catheter_kinemetic/kinemetic_widget.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_qcom/form/mainwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_qcom/header/mainwindow.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_qcom/header/sdk_utility.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_qcom/include/dhdc.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_qcom/include/drdc.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_qcom/lib/forceDimensionSDK/dhdms.lib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_qcom/lib/forceDimensionSDK/dhdms64.lib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_qcom/lib/forceDimensionSDK/drdms.lib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_qcom/lib/forceDimensionSDK/drdms64.lib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_qcom/qpolt3d/QPlot3D.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_qcom/qpolt3d/QPlot3D.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../omega7_qcom/src/mainwindow.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kinemetic_sim/kinemetic_simulation.pro.user" beforeDir="false" afterPath="$PROJECT_DIR$/../kinemetic_sim/kinemetic_simulation.pro.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/catheter_kinemetic.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-b2c10d67c22215d60cfb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-35c60845a06b0f8934c6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-9e005d909612dc4f9edd.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-02-26T04-46-18-0270.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-omega7_com-Debug-d7f2d4b9d20ef5104621.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/omega7_com.dir/omega7_com_autogen/mocs_compilation.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/omega7_com.dir/omega7_com_autogen/mocs_compilation.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/omega7_com_autogen.dir/AutogenInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/omega7_com_autogen.dir/AutogenInfo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/omega7_com_autogen.dir/AutogenUsed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/omega7_com_autogen.dir/AutogenUsed.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/omega7_com_autogen.dir/ParseCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/omega7_com_autogen.dir/ParseCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/omega7_com.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/omega7_com_autogen/moc_predefs.h" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/omega7_com_autogen/moc_predefs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/omega7_com_autogen/mocs_compilation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/omega7_com_autogen/mocs_compilation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/kinemetic_widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/kinemetic_widget.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +112,7 @@
       <workItem from="1677461966828" duration="8479000" />
       <workItem from="1677473661875" duration="8176000" />
       <workItem from="1677486499399" duration="13359000" />
-      <workItem from="1677505513199" duration="600000" />
+      <workItem from="1677505513199" duration="3001000" />
     </task>
     <servers />
   </component>

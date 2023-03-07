@@ -45,6 +45,7 @@ aux_source_directory(./src proj_src)
 #aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/src/forceDimension sdk_src)
 aux_source_directory(${glad_dir}/src glad_src)
 
+file(GLOB exe_header ./header/*.h)
 #aux_source_directory(./src/SDK_examples sdk_examples_src)
 
 
@@ -67,7 +68,9 @@ link_directories(
 
 
 # 设置构建目标
-add_executable(${PROJECT_NAME} main.cpp ${proj_src} ${glad_src} header/QPlot3D.h header/catheter_kinemetic.h header/kinemetic_widget.h)
+#add_executable(${PROJECT_NAME} main.cpp ${proj_src} ${glad_src} header/QPlot3D.h header/catheter_kinemetic.h header/kinemetic_widget.h header/)
+add_executable(${PROJECT_NAME} main.cpp ${proj_src} ${glad_src} ${exe_header})
+
 
 
 target_link_libraries(${PROJECT_NAME}

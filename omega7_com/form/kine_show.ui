@@ -3,8 +3,8 @@
     <author/>
     <comment/>
     <exportmacro/>
-    <class>Qplot3D</class>
-    <widget class="QObject" name="Qplot3D">
+    <class>kine_show</class>
+    <widget class="QWidget" name="kine_show">
         <property name="geometry">
             <rect>
                 <x>0</x>
@@ -14,7 +14,7 @@
             </rect>
         </property>
         <property name="windowTitle">
-            <string>Qplot3D</string>
+            <string>kine_show</string>
         </property>
     </widget>
     <pixmapfunction/>

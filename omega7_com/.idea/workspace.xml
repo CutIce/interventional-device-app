@@ -17,11 +17,39 @@
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="QT-Release" ENABLED="true" CONFIG_NAME="Release" TOOLCHAIN_NAME="MinGW-QT" BUILD_OPTIONS="-j 12" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a318bfd-10d1-4202-bffb-70b157506ac2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/catheter_kinemetic.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kinemetic_sim/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kinemetic_sim/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kinemetic_sim/.idea/kinemetic_sim.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kinemetic_sim/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kinemetic_sim/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../multiThreads/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../multiThreads/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../multiThreads/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../multiThreads/.idea/multiThreads.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../multiThreads/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../multiThreads/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_com.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form/kine_show.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form/mainwindow.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header/kine_show.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header/mainwindow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header/omega_com.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header/rigid_kinematic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kine_show.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mainwindow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/omega_com.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rigid_kinematic.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/.idea/omega7_qcom.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_qcom/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
@@ -32,7 +60,10 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/omega7_com_autogen/mocs_compilation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/omega7_com_autogen/mocs_compilation.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/kinemetic_widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/kinemetic_widget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form/qplot3d.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kinemetic_widget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/kinemetic_widget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../omega7_demo/cmake-build-release-mingw-qt/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../omega7_demo/cmake-build-release-mingw-qt/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +73,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:QT-Release" />
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -60,37 +91,38 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Documents/23SP/graduation_project/qt_app/omega7_com&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "E:/Documents/23SP/graduation_project/qt_app/omega7_com",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CMakeSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\header" />
-      <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\include" />
-      <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\src" />
       <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\form" />
+      <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\header" />
+      <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\src" />
+      <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\include" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="omega7_com" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="omega7_com" TARGET_NAME="omega7_com" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="omega7_com" RUN_TARGET_NAME="omega7_com">
@@ -112,7 +144,19 @@
       <workItem from="1677461966828" duration="8479000" />
       <workItem from="1677473661875" duration="8176000" />
       <workItem from="1677486499399" duration="13359000" />
-      <workItem from="1677505513199" duration="3001000" />
+      <workItem from="1677505513199" duration="4670000" />
+      <workItem from="1677512542499" duration="1590000" />
+      <workItem from="1677572752044" duration="1000" />
+      <workItem from="1677761804872" duration="3422000" />
+      <workItem from="1677807982929" duration="3874000" />
+      <workItem from="1677895962332" duration="10725000" />
+      <workItem from="1677983005178" duration="612000" />
+      <workItem from="1678071313497" duration="13320000" />
+      <workItem from="1678118088991" duration="1017000" />
+      <workItem from="1678158996782" duration="7263000" />
+      <workItem from="1678185202101" duration="3244000" />
+      <workItem from="1678192214574" duration="434000" />
+      <workItem from="1678197562807" duration="835000" />
     </task>
     <servers />
   </component>

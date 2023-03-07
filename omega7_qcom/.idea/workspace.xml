@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="855017d1-6334-48d7-bb81-d19ce286427c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../kinemetic_sim/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kinemetic_sim/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kinemetic_sim/.idea/kinemetic_sim.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kinemetic_sim/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kinemetic_sim/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../multiThreads/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../multiThreads/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../multiThreads/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../multiThreads/.idea/multiThreads.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../multiThreads/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../multiThreads/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_com/form/kine_show.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_com/form/mainwindow.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_com/header/kine_show.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_com/header/mainwindow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_com/header/omega_com.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_com/header/rigid_kinematic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_com/src/kine_show.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_com/src/mainwindow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_com/src/omega_com.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../omega7_com/src/rigid_kinematic.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../omega7_com/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../omega7_com/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../omega7_com/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../omega7_com/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../omega7_com/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../omega7_com/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../omega7_com/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../omega7_com/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../omega7_com/cmake-build-debug/CMakeFiles/omega7_com.dir/omega7_com_autogen/mocs_compilation.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../omega7_com/cmake-build-debug/CMakeFiles/omega7_com.dir/omega7_com_autogen/mocs_compilation.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../omega7_com/cmake-build-debug/CMakeFiles/omega7_com_autogen.dir/AutogenInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/../omega7_com/cmake-build-debug/CMakeFiles/omega7_com_autogen.dir/AutogenInfo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../omega7_com/cmake-build-debug/CMakeFiles/omega7_com_autogen.dir/ParseCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../omega7_com/cmake-build-debug/CMakeFiles/omega7_com_autogen.dir/ParseCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../omega7_com/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../omega7_com/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../omega7_com/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../omega7_com/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../omega7_com/cmake-build-debug/omega7_com_autogen/mocs_compilation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../omega7_com/cmake-build-debug/omega7_com_autogen/mocs_compilation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../omega7_com/form/qplot3d.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../omega7_com/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../omega7_com/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../omega7_com/src/kinemetic_widget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../omega7_com/src/kinemetic_widget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../omega7_demo/cmake-build-release-mingw-qt/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../omega7_demo/cmake-build-release-mingw-qt/Testing/Temporary/LastTest.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ProjectId" id="2MgGzHF8Un0y7iT4Gg2NxLsj5We" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "E:/Documents/23SP/graduation_project/qt_app/omega7_qcom",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="855017d1-6334-48d7-bb81-d19ce286427c" name="Changes" comment="" />
+      <created>1678182072610</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678182072610</updated>
+      <workItem from="1678182073729" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

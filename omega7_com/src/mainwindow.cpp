@@ -1,9 +1,18 @@
-#include "kinemetic_widget.h"
+//
+// Created by hsh on 2023/3/6.
+//
 
-Kinemetic_Widget::Kinemetic_Widget(QWidget *parent)
-    : QWidget(parent)
-{
-    QWidget *widget_plot = new QWidget(this); 
+// You may need to build the project (run Qt uic code generator) to get "ui_mainwindow.h" resolved
+
+#include "mainwindow.h"
+#include "../form/ui_mainwindow.h"
+
+
+mainwindow::mainwindow(QWidget *parent) :
+        QMainWindow(parent), ui(new Ui::mainwindow) {
+    ui->setupUi(this);
+    // 绘制部分构造
+    QWidget *widget_plot = new QWidget(this);
     QWidget *widget_steer_control = new QWidget(this);
     QWidget *widget_workspace_control = new QWidget(this);
 
@@ -12,7 +21,6 @@ Kinemetic_Widget::Kinemetic_Widget(QWidget *parent)
     QLabel *pLabel_workspace_control_title = new QLabel(widget_workspace_control);
     pLabel_workspace_control_title->setText("工作空间控制");
 
-    //驱动空间控制组件
     for(int i = 0; i < 6; i++)
     {
         pLabel_steer_control[i] = new QLabel(widget_steer_control);
@@ -123,14 +131,26 @@ Kinemetic_Widget::Kinemetic_Widget(QWidget *parent)
     this->plotInit();
 
     //1ms定时器
-    QTimer *timer = new QTimer(this);
-    connect(timer, SIGNAL(timeout()), this, SLOT(runSimulation()), Qt::UniqueConnection);
-    timer->start(20);    
+    connect(&this->timer, SIGNAL(timeout()), this, SLOT(runSimulation()), Qt::UniqueConnection);
+    timer.start(20);
+
+    // moveToThread
+    omega7_communicator->moveToThread(omega_com_thread);
+
+
+    //
+    QObject::connect(this, &mainwindow::beginOmega7Communication, this->omega7_communicator, &Omega7_Communicator::continueQueryPose, Qt::UniqueConnection);
+    QObject::connect(this, &mainwindow::stopOmega7Communication, this->omega7_communicator, &Omega7_Communicator::stopQueryPose, Qt::UniqueConnection);
+
+
 }
 
-//运行仿真(1ms循环)
-void Kinemetic_Widget::runSimulation(void)
-{
+mainwindow::~mainwindow() {
+    delete ui;
+}
+
+
+void mainwindow::runSimulation() {
     //驱动空间控制
     qS.m.phi = (float)pSlider_steer_control[0]->value()/5730;
     qS.m.x = (float)pSlider_steer_control[1]->value()/100;
@@ -229,9 +249,7 @@ void Kinemetic_Widget::runSimulation(void)
     plotCatheter(qG);
 }
 
-//鞘管图像初始化
-void Kinemetic_Widget::plotInit(void)
-{
+void mainwindow::plotInit() {
     catheter_a.setColor(QColor(QRgb(0x0D5CAB)));
     catheter_a.setLineWidth(8);
     catheter_b.setColor(QColor(QRgb(0x2A90F6)));
@@ -267,9 +285,7 @@ void Kinemetic_Widget::plotInit(void)
     plot_yz.setAzimuth(90);
 }
 
-//由鞘管几何空间参数绘制位形曲线
-void Kinemetic_Widget::plotCatheter(Catheter_Geometry_Param_Group_t qG)
-{
+void mainwindow::plotCatheter(Catheter_Geometry_Param_Group_t qG) {
     //清空曲线
     catheter_a.clear();
     catheter_b.clear();
@@ -284,8 +300,8 @@ void Kinemetic_Widget::plotCatheter(Catheter_Geometry_Param_Group_t qG)
         //圆弧旋转矩阵
         Eigen::Matrix<float, 3, 3> Ra;
         Ra << -cos(qG.a.theta), 0, -sin(qG.a.theta),
-              -sin(qG.a.theta), 0, cos(qG.a.theta),
-              0, 1, 0;
+                -sin(qG.a.theta), 0, cos(qG.a.theta),
+                0, 1, 0;
         //圆弧圆心位置
         Eigen::Matrix<float, 3, 1> Oa;
         Oa << 1/qG.a.kappa*cos(qG.a.theta), 1/qG.a.kappa*sin(qG.a.theta), qG.a.d;
@@ -314,8 +330,8 @@ void Kinemetic_Widget::plotCatheter(Catheter_Geometry_Param_Group_t qG)
         //圆弧旋转矩阵
         Eigen::Matrix<float, 3, 3> Rb;
         Rb << -cos(qG.b.theta), 0, -sin(qG.b.theta),
-              -sin(qG.b.theta), 0, cos(qG.b.theta),
-              0, 1, 0;
+                -sin(qG.b.theta), 0, cos(qG.b.theta),
+                0, 1, 0;
         Rb = Ta.block(0, 0, 3, 3) * Rb;
         //圆弧圆心位置
         Eigen::Matrix<float, 3, 1> Ob;
@@ -343,8 +359,6 @@ void Kinemetic_Widget::plotCatheter(Catheter_Geometry_Param_Group_t qG)
         catheter_b.addData(Pb1(0, 0), Pb1(1, 0), Pb1(2, 0));
     }
 
-//    plot.addCurve(&catheter_a);
-//    plot.addCurve(&catheter_b);
     for(int i = 0; i < 4; i++)
     {
         p_plot[i]->addCurve(&catheter_a);

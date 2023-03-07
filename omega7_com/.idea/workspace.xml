@@ -21,43 +21,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a318bfd-10d1-4202-bffb-70b157506ac2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/cmake-build-debug/.cmake/api/v1/reply/cache-v2-16e7bc106da6b4b35600.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-27a17e6fd38fe1974caa.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/cmake-build-debug/CMakeFiles/kinematics_com.dir/E_/Softwares/opengl/glad/glad/src/glad.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/cmake-build-debug/CMakeFiles/kinematics_com.dir/src/QPlot3D.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/cmake-build-debug/CMakeFiles/kinematics_com.dir/src/catheter_kinemetic.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/cmake-build-debug/CMakeFiles/kinematics_com.dir/src/kinemetic_widget.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/cmake-build-debug/kinematics_com_autogen/6OFTS6FJJP/moc_QPlot3D.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/cmake-build-debug/kinematics_com_autogen/6OFTS6FJJP/moc_kinemetic_widget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/form/qplot3d.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/header/QPlot3D.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/header/catheter_kinemetic.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/header/kinemetic_widget.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/include/dhdc.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/include/drdc.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/include/sdk_utility.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/lib/dhdms.lib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/lib/dhdms64.lib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/lib/drdms.lib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/lib/drdms64.lib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/src/QPlot3D.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/src/SDK_examples/autocenter.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/src/SDK_examples/autoinit.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/src/SDK_examples/center.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/src/SDK_examples/encoders.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/src/SDK_examples/gravity.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/src/SDK_examples/jacobian.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/src/SDK_examples/mirror.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/src/SDK_examples/multithread.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/src/SDK_examples/robot.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/src/SDK_examples/segment.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/src/SDK_examples/sensor.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/src/SDK_examples/viscosity.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/src/SDK_examples/wrist.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/src/catheter_kinemetic.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/src/forceDimension/sdk_utility.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kinematics_com/src/kinemetic_widget.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +102,7 @@
       <workItem from="1677473661875" duration="8176000" />
       <workItem from="1677486499399" duration="13359000" />
       <workItem from="1677505513199" duration="3001000" />
-      <workItem from="1678199471433" duration="2345000" />
+      <workItem from="1678199471433" duration="2601000" />
     </task>
     <servers />
   </component>

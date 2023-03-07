@@ -239,27 +239,6 @@ CMAKE_STRIP:FILEPATH=E:/Softwares/qt/qt_5_14/Tools/mingw730_64/bin/strip.exe
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//The directory containing a CMake configuration file for GLEW.
-GLEW_DIR:PATH=GLEW_DIR-NOTFOUND
-
-//Path to a file.
-GLEW_INCLUDE_DIR:PATH=GLEW_INCLUDE_DIR-NOTFOUND
-
-//Path to a library.
-GLEW_SHARED_LIBRARY_DEBUG:FILEPATH=GLEW_SHARED_LIBRARY_DEBUG-NOTFOUND
-
-//Path to a library.
-GLEW_SHARED_LIBRARY_RELEASE:FILEPATH=GLEW_SHARED_LIBRARY_RELEASE-NOTFOUND
-
-//Path to a library.
-GLEW_STATIC_LIBRARY_DEBUG:FILEPATH=GLEW_STATIC_LIBRARY_DEBUG-NOTFOUND
-
-//Path to a library.
-GLEW_STATIC_LIBRARY_RELEASE:FILEPATH=GLEW_STATIC_LIBRARY_RELEASE-NOTFOUND
-
-//The directory containing a CMake configuration file for Glu32.
-Glu32_DIR:PATH=Glu32_DIR-NOTFOUND
-
 //OpenGL library for win32
 OPENGL_gl_LIBRARY:STRING=opengl32
 
@@ -269,50 +248,17 @@ OPENGL_glu_LIBRARY:STRING=glu32
 //The directory containing a CMake configuration file for Qt5Core.
 Qt5Core_DIR:PATH=E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/lib/cmake/Qt5Core
 
-//The directory containing a CMake configuration file for Qt5DoubleSpinBox.
-Qt5DoubleSpinBox_DIR:PATH=Qt5DoubleSpinBox_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for Qt5Gui.
 Qt5Gui_DIR:PATH=E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/lib/cmake/Qt5Gui
 
-//The directory containing a CMake configuration file for Qt5Label.
-Qt5Label_DIR:PATH=Qt5Label_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for Qt5OpenGL.
 Qt5OpenGL_DIR:PATH=E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/lib/cmake/Qt5OpenGL
-
-//The directory containing a CMake configuration file for Qt5QtOpenGL.
-Qt5QtOpenGL_DIR:PATH=Qt5QtOpenGL_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for Qt5Widgets.
 Qt5Widgets_DIR:PATH=E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/lib/cmake/Qt5Widgets
 
 //The directory containing a CMake configuration file for Qt5.
 Qt5_DIR:PATH=E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/lib/cmake/Qt5
-
-//Path to a library.
-dhdlib:FILEPATH=E:/Documents/23SP/graduation_project/qt_app/omega7_com/lib/dhdms64.lib
-
-//Path to a library.
-drdlib:FILEPATH=E:/Documents/23SP/graduation_project/qt_app/omega7_com/lib/drdms64.lib
-
-//The directory containing a CMake configuration file for glfw.
-glfw_DIR:PATH=glfw_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for glu32.
-glu32_DIR:PATH=glu32_DIR-NOTFOUND
-
-//Path to a library.
-libfreeglut:FILEPATH=E:/Softwares/opengl/freeglut-MinGW-3.0.0-1.mp/freeglut/lib/libfreeglut.a
-
-//Path to a library.
-libfreeglut_static:FILEPATH=E:/Softwares/opengl/freeglut-MinGW-3.0.0-1.mp/freeglut/lib/libfreeglut_static.a
-
-//Path to a library.
-libglfw3:FILEPATH=E:/Softwares/opengl/glfw/lib-mingw/libglfw3.a
-
-//Path to a library.
-libglfw3dll:FILEPATH=E:/Softwares/opengl/glfw/lib-mingw/libglfw3dll.a
 
 //Value Computed by CMake
 omega7_com_BINARY_DIR:STATIC=E:/Documents/23SP/graduation_project/qt_app/omega7_com/cmake-build-debug
@@ -482,16 +428,6 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][c ][v()]
-//ADVANCED property for variable: GLEW_INCLUDE_DIR
-GLEW_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GLEW_SHARED_LIBRARY_DEBUG
-GLEW_SHARED_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GLEW_SHARED_LIBRARY_RELEASE
-GLEW_SHARED_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GLEW_STATIC_LIBRARY_DEBUG
-GLEW_STATIC_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GLEW_STATIC_LIBRARY_RELEASE
-GLEW_STATIC_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_gl_LIBRARY
 OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_glu_LIBRARY

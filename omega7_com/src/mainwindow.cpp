@@ -146,6 +146,8 @@ mainwindow::mainwindow(QWidget *parent) :
     omega7_communicator->moveToThread(omega_com_thread);
     sd->serial_system.moveToThread(serial_com_thread);
 
+    omega_com_thread->start();
+    serial_com_thread->start();
     //
     QObject::connect(this, &mainwindow::beginOmega7Communication, this->omega7_communicator, &Omega7_Communicator::continueQueryPose, Qt::UniqueConnection);
     QObject::connect(this, &mainwindow::stopOmega7Communication, this->omega7_communicator, &Omega7_Communicator::stopQueryPose, Qt::UniqueConnection);
@@ -154,7 +156,11 @@ mainwindow::mainwindow(QWidget *parent) :
 }
 
 mainwindow::~mainwindow() {
+    omega_com_thread->quit();
+    serial_com_thread->quit();
 
+    omega_com_thread->wait();
+    serial_com_thread->wait();
 }
 
 

@@ -22,48 +22,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a318bfd-10d1-4202-bffb-70b157506ac2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/form/serial_demo.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/header/serial/crc8_crc16.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/header/serial/protocol.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/header/serial/serial.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/header/serial/serial_demo.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/header/serial/serial_system.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/serial_protocol/crc8_crc16.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serial/crc8_crc16.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serial/protocol.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serial/serial.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serial/serial_demo.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serial/serial_system.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kinemetic_sim/Serial/protocol.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../kinemetic_sim/Serial/protocol.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/omega7_com_autogen/moc_predefs.h" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/omega7_com_autogen/moc_predefs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form/kine_show.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/kine_show.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/kinemetic_widget.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/mainwindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/mainwindow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/omega_com.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/omega_com.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/dhdc.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/sdk/dhdc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/drdc.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/sdk/drdc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/sdk_utility.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/sdk/sdk_utility.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SDK_examples/autocenter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SDK_examples/autocenter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SDK_examples/autoinit.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SDK_examples/autoinit.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SDK_examples/center.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SDK_examples/center.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SDK_examples/encoders.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SDK_examples/encoders.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SDK_examples/gravity.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SDK_examples/gravity.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SDK_examples/jacobian.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SDK_examples/jacobian.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SDK_examples/mirror.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SDK_examples/mirror.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SDK_examples/multithread.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SDK_examples/multithread.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SDK_examples/robot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SDK_examples/robot.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SDK_examples/segment.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SDK_examples/segment.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SDK_examples/sensor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SDK_examples/sensor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SDK_examples/viscosity.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SDK_examples/viscosity.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SDK_examples/wrist.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SDK_examples/wrist.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forceDimension/sdk_utility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/forceDimension/sdk_utility.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kine_show.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kinemetic_widget.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainwindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainwindow.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -166,7 +125,7 @@
       <workItem from="1678192214574" duration="434000" />
       <workItem from="1678197562807" duration="835000" />
       <workItem from="1678240637253" duration="6816000" />
-      <workItem from="1678256123901" duration="4812000" />
+      <workItem from="1678256123901" duration="6884000" />
     </task>
     <servers />
   </component>

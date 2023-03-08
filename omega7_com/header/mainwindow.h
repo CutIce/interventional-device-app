@@ -15,16 +15,11 @@
 #include "../header/omega_com.h"
 #include "../header/catheter_kinemetic.h"
 
-QT_BEGIN_NAMESPACE
-namespace Ui { class mainwindow; }
-QT_END_NAMESPACE
 
-class mainwindow : public QMainWindow {
+class mainwindow : public QWidget {
     Q_OBJECT
 
 private:
-    Ui::mainwindow *ui;
-
     // 绘制组件
     QPlot3D plot;                           //鞘管3D图像
     QPlot3D plot_xz;                        //鞘管3D图像正视图

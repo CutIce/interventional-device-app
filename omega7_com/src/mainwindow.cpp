@@ -9,8 +9,7 @@
 
 
 mainwindow::mainwindow(QWidget *parent) :
-        QMainWindow(parent), ui(new Ui::mainwindow) {
-    ui->setupUi(this);
+        QWidget(parent) {
     // 绘制部分构造
     QWidget *widget_plot = new QWidget(this);
     QWidget *widget_steer_control = new QWidget(this);
@@ -146,7 +145,7 @@ mainwindow::mainwindow(QWidget *parent) :
 }
 
 mainwindow::~mainwindow() {
-    delete ui;
+
 }
 
 

@@ -14,7 +14,7 @@ Omega7_Communicator::Omega7_Communicator(QObject *parent) {
     encNum = 7;
     grip = 0;
 
-    QObject::connect(&this->timer, SIGNAL(QTimer::timeout), this, SLOT(Omega7_Communicator::loop), Qt::UniqueConnection);
+    QObject::connect(&this->timer, &QTimer::timeout, this, &Omega7_Communicator::loop, Qt::UniqueConnection);
 
     timer.start(1);
 }

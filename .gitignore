@@ -23,6 +23,10 @@ CommDemo 202101172345/
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+
+omega7_com/cmake-build-qt-release/*.*
+omega7_com/cmake-build-debug/*.*
+
 zips/
 build-kinemetic_simulation-Desktop_Qt_5_14_2_MinGW_32_bit-Debug/
 build-kinemetic_simulation-Desktop_Qt_5_14_2_MinGW_64_bit-Debug/

@@ -133,9 +133,18 @@ mainwindow::mainwindow(QWidget *parent) :
     connect(&this->timer, SIGNAL(timeout()), this, SLOT(runSimulation()), Qt::UniqueConnection);
     timer.start(20);
 
+    QObject::connect(this, &mainwindow::signal_qSmphi, this->sd, &serial_demo::Drotate);
+    QObject::connect(this, &mainwindow::signal_qSmx, this->sd, &serial_demo::Dcurve);
+    QObject::connect(this, &mainwindow::signal_qSmz, this->sd, &serial_demo::Dslide);
+    QObject::connect(this, &mainwindow::signal_qSnphi, this->sd, &serial_demo::rotate);
+    QObject::connect(this, &mainwindow::signal_qSnx, this->sd, &serial_demo::curve);
+    QObject::connect(this, &mainwindow::signal_qSnz, this->sd, &serial_demo::slide);
+
+    sd->show();
+
     // moveToThread
     omega7_communicator->moveToThread(omega_com_thread);
-
+    sd->serial_system.moveToThread(serial_com_thread);
 
     //
     QObject::connect(this, &mainwindow::beginOmega7Communication, this->omega7_communicator, &Omega7_Communicator::continueQueryPose, Qt::UniqueConnection);

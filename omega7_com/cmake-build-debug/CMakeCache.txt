@@ -254,6 +254,9 @@ Qt5Gui_DIR:PATH=E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/lib/cmake/Qt5Gui
 //The directory containing a CMake configuration file for Qt5OpenGL.
 Qt5OpenGL_DIR:PATH=E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/lib/cmake/Qt5OpenGL
 
+//The directory containing a CMake configuration file for Qt5SerialPort.
+Qt5SerialPort_DIR:PATH=E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/lib/cmake/Qt5SerialPort
+
 //The directory containing a CMake configuration file for Qt5Widgets.
 Qt5Widgets_DIR:PATH=E:/Softwares/qt/qt_5_14/5.14.2/mingw73_64/lib/cmake/Qt5Widgets
 

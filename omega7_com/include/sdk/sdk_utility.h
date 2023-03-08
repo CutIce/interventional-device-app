@@ -11,8 +11,8 @@
 #define _USE_MATH_DEFINCES
 #include <math.h>
 
-#include "drdc.h"
-#include "dhdc.h"
+#include "sdk/drdc.h"
+#include "sdk/dhdc.h"
 
 #include "Eigen/Eigen"
 using namespace Eigen;

@@ -14,6 +14,7 @@
 #include "QPlot3D.h"
 #include "../header/omega_com.h"
 #include "../header/catheter_kinemetic.h"
+#include "../header/serial/serial_demo.h"
 
 
 class mainwindow : public QWidget {
@@ -55,7 +56,7 @@ public:
     Catheter_Jacob_Steer_t JS;              //操纵空间雅可比
 
     Omega7_Communicator *omega7_communicator = new Omega7_Communicator;
-
+    serial_demo *sd = new serial_demo;
 
     explicit mainwindow(QWidget *parent = nullptr);
     ~mainwindow() override;

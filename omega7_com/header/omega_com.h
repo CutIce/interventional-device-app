@@ -7,8 +7,8 @@
 
 #include <QObject>
 #include <QTimer>
-#include "drdc.h"
-#include "dhdc.h"
+#include "sdk/drdc.h"
+#include "sdk/dhdc.h"
 #include <stdio.h>
 #include <stdlib.h>
 

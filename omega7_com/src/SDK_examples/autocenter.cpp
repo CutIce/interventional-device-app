@@ -13,8 +13,8 @@
 #define _USE_MATH_DEFINES
 #include <math.h>
 
-#include "dhdc.h"
-#include "drdc.h"
+#include "sdk/dhdc.h"
+#include "sdk/drdc.h"
 
 #define REFRESH_INTERVAL  0.1   // sec
 

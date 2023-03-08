@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#include "dhdc.h"
+#include "sdk/dhdc.h"
 
 #define REFRESH_INTERVAL  0.05   // sec
 

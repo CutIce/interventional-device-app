@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 
-#include "dhdc.h"
+#include "sdk/dhdc.h"
 
 
 

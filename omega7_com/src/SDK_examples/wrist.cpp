@@ -12,7 +12,7 @@
 #include <math.h>
 #include <stdio.h>
 
-#include "dhdc.h"
+#include "sdk/dhdc.h"
 
 #define REFRESH_INTERVAL  0.1   // sec
 #define R2D(x) 180.0 * (x) / M_PI

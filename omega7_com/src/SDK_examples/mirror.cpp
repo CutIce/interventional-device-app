@@ -13,7 +13,7 @@
 #define _USE_MATH_DEFINES
 #include <math.h>
 
-#include "drdc.h"
+#include "sdk/drdc.h"
 
 #define DEFAULT_K_SLAVE   500.0
 #define DEFAULT_K_BOX     500.0

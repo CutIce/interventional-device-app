@@ -17,6 +17,7 @@ find_package(Qt5 COMPONENTS
         Gui
         Widgets
         OpenGL
+        SerialPort
         REQUIRED)
 find_package(OpenGL REQUIRED)
 
@@ -29,9 +30,19 @@ set(glew_dir "E:/Softwares/opengl/glew-2.1.0-win32/glew-2.1.0")
 add_definitions(-DGLEW_STATIC)
 
 # 添加头文件目录
-include_directories( ${CMAKE_CURRENT_LIST_DIR}/include
+include_directories(
+        # include
+        ${CMAKE_CURRENT_LIST_DIR}/include
+        ${CMAKE_CURRENT_LIST_DIR}/include/sdk
+        ${CMAKE_CURRENT_LIST_DIR}/include/serial
+
+        # header (包含MACRO -- Q_OBJECT )
         ${CMAKE_CURRENT_LIST_DIR}/header
+
+        # UI files
         ${CMAKE_CURRENT_LIST_DIR}/form
+
+        # External lib include
         ${eigen3_dir}
         ${freeglut_dir}/include
         ${glfw_dir}/include
@@ -42,10 +53,11 @@ include_directories( ${CMAKE_CURRENT_LIST_DIR}/include
 
 # 添加源文件目录
 aux_source_directory(./src proj_src)
-#aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/src/forceDimension sdk_src)
 aux_source_directory(${glad_dir}/src glad_src)
+aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/src/serial  serial_src)
 
-file(GLOB exe_header ./header/*.h)
+
+file(GLOB exe_header ${CMAKE_CURRENT_LIST_DIR}/header/*.h  ${CMAKE_CURRENT_LIST_DIR}/header/serial/*.h)
 #aux_source_directory(./src/SDK_examples sdk_examples_src)
 
 
@@ -69,7 +81,7 @@ link_directories(
 
 # 设置构建目标
 #add_executable(${PROJECT_NAME} main.cpp ${proj_src} ${glad_src} header/QPlot3D.h header/catheter_kinemetic.h header/kinemetic_widget.h header/)
-add_executable(${PROJECT_NAME} main.cpp ${proj_src} ${glad_src} ${exe_header})
+add_executable(${PROJECT_NAME} main.cpp ${proj_src} ${glad_src} ${serial_src} ${exe_header})
 
 
 
@@ -78,6 +90,7 @@ target_link_libraries(${PROJECT_NAME}
         Qt5::Widgets
         Qt5::Gui
         Qt5::OpenGL
+        Qt5::SerialPort
         dhdms64.lib
         drdms64.lib
         libfreeglut.a

@@ -14,7 +14,7 @@
 #ifndef __DRDC_H__
 #define __DRDC_H__
 
-#include "dhdc.h"
+#include "sdk/dhdc.h"
 
 
 #ifdef __cplusplus

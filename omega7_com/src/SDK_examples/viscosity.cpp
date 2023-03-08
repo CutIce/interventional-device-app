@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 
-#include "dhdc.h"
+#include "sdk/dhdc.h"
 
 #define REFRESH_INTERVAL    0.1   //  seconds
 #define LINEAR_VISCOSITY   20.0   //  N/(m/s)

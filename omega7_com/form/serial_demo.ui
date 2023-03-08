@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>serial_demo</class>
+    <widget class="QWidget" name="serial_demo">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>405</width>
+                <height>311</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>serial_demo</string>
+        </property>
+        <widget class="QWidget" name="horizontalLayoutWidget_2">
+            <property name="geometry">
+                <rect>
+                    <x>50</x>
+                    <y>150</y>
+                    <width>141</width>
+                    <height>51</height>
+                </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                    <widget class="QLabel" name="label_input">
+                        <property name="font">
+                            <font>
+                                <family>Microsoft YaHei</family>
+                                <pointsize>9</pointsize>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>input  </string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QLineEdit" name="lineEdit_input0">
+                        <property name="font">
+                            <font>
+                                <pointsize>9</pointsize>
+                            </font>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_3">
+            <property name="geometry">
+                <rect>
+                    <x>50</x>
+                    <y>200</y>
+                    <width>141</width>
+                    <height>61</height>
+                </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                    <widget class="QLabel" name="label_fdb">
+                        <property name="font">
+                            <font>
+                                <family>Microsoft YaHei</family>
+                                <pointsize>9</pointsize>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>fdb     </string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QLineEdit" name="lineEdit_fdb0">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <pointsize>9</pointsize>
+                            </font>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget">
+            <property name="geometry">
+                <rect>
+                    <x>50</x>
+                    <y>40</y>
+                    <width>141</width>
+                    <height>61</height>
+                </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                    <widget class="QLabel" name="label_availablePortNum">
+                        <property name="font">
+                            <font>
+                                <pointsize>9</pointsize>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>可用串口数：</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QPushButton" name="OpenSerialButton">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <pointsize>9</pointsize>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>打开串口</string>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QTextBrowser" name="textBrowser_serialRxData">
+            <property name="geometry">
+                <rect>
+                    <x>220</x>
+                    <y>30</y>
+                    <width>151</width>
+                    <height>241</height>
+                </rect>
+            </property>
+        </widget>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

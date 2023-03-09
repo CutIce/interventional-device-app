@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Serial_System_t {
-    QByteArrayData data[18];
-    char stringdata0[248];
+    QByteArrayData data[19];
+    char stringdata0[264];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -47,9 +47,10 @@ QT_MOC_LITERAL(11, 127, 16), // "Frame_Data_U2I_t"
 QT_MOC_LITERAL(12, 144, 16), // "Frame_Data_I2U_t"
 QT_MOC_LITERAL(13, 161, 16), // "Frame_Data_C2I_t"
 QT_MOC_LITERAL(14, 178, 16), // "Frame_Data_I2C_t"
-QT_MOC_LITERAL(15, 195, 14), // "txCpltCallback"
-QT_MOC_LITERAL(16, 210, 14), // "rxCpltCallback"
-QT_MOC_LITERAL(17, 225, 22) // "dataUnpackCpltCallback"
+QT_MOC_LITERAL(15, 195, 15), // "startThreadSlot"
+QT_MOC_LITERAL(16, 211, 14), // "txCpltCallback"
+QT_MOC_LITERAL(17, 226, 14), // "rxCpltCallback"
+QT_MOC_LITERAL(18, 241, 22) // "dataUnpackCpltCallback"
 
     },
     "Serial_System\0signal_TxCplt\0\0int64_t\0"
@@ -57,8 +58,9 @@ QT_MOC_LITERAL(17, 225, 22) // "dataUnpackCpltCallback"
     "signal_DataUnpackCplt\0Frame_Data_U2C_t\0"
     "Frame_Data_C2U_t\0Frame_Data_U2I_t\0"
     "Frame_Data_I2U_t\0Frame_Data_C2I_t\0"
-    "Frame_Data_I2C_t\0txCpltCallback\0"
-    "rxCpltCallback\0dataUnpackCpltCallback"
+    "Frame_Data_I2C_t\0startThreadSlot\0"
+    "txCpltCallback\0rxCpltCallback\0"
+    "dataUnpackCpltCallback"
 };
 #undef QT_MOC_LITERAL
 
@@ -68,7 +70,7 @@ static const uint qt_meta_data_Serial_System[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-      16,   14, // methods
+      17,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -76,24 +78,25 @@ static const uint qt_meta_data_Serial_System[] = {
        8,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    2,   94,    2, 0x06 /* Public */,
-       6,    2,   99,    2, 0x06 /* Public */,
-       8,    2,  104,    2, 0x06 /* Public */,
+       1,    2,   99,    2, 0x06 /* Public */,
+       6,    2,  104,    2, 0x06 /* Public */,
        8,    2,  109,    2, 0x06 /* Public */,
        8,    2,  114,    2, 0x06 /* Public */,
        8,    2,  119,    2, 0x06 /* Public */,
        8,    2,  124,    2, 0x06 /* Public */,
        8,    2,  129,    2, 0x06 /* Public */,
+       8,    2,  134,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-      15,    2,  134,    2, 0x08 /* Private */,
-      16,    2,  139,    2, 0x08 /* Private */,
-      17,    2,  144,    2, 0x08 /* Private */,
-      17,    2,  149,    2, 0x08 /* Private */,
-      17,    2,  154,    2, 0x08 /* Private */,
-      17,    2,  159,    2, 0x08 /* Private */,
-      17,    2,  164,    2, 0x08 /* Private */,
-      17,    2,  169,    2, 0x08 /* Private */,
+      15,    0,  139,    2, 0x0a /* Public */,
+      16,    2,  140,    2, 0x0a /* Public */,
+      17,    2,  145,    2, 0x0a /* Public */,
+      18,    2,  150,    2, 0x0a /* Public */,
+      18,    2,  155,    2, 0x0a /* Public */,
+      18,    2,  160,    2, 0x0a /* Public */,
+      18,    2,  165,    2, 0x0a /* Public */,
+      18,    2,  170,    2, 0x0a /* Public */,
+      18,    2,  175,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void, 0x80000000 | 3, QMetaType::QString,    4,    5,
@@ -106,6 +109,7 @@ static const uint qt_meta_data_Serial_System[] = {
     QMetaType::Void, 0x80000000 | 14, QMetaType::QString,    7,    5,
 
  // slots: parameters
+    QMetaType::Void,
     QMetaType::Void, 0x80000000 | 3, QMetaType::QString,    4,    5,
     QMetaType::Void, QMetaType::QByteArray, QMetaType::QString,    7,    5,
     QMetaType::Void, 0x80000000 | 9, QMetaType::QString,    7,    5,
@@ -132,14 +136,15 @@ void Serial_System::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         case 5: _t->signal_DataUnpackCplt((*reinterpret_cast< const Frame_Data_I2U_t(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
         case 6: _t->signal_DataUnpackCplt((*reinterpret_cast< const Frame_Data_C2I_t(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
         case 7: _t->signal_DataUnpackCplt((*reinterpret_cast< const Frame_Data_I2C_t(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
-        case 8: _t->txCpltCallback((*reinterpret_cast< int64_t(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
-        case 9: _t->rxCpltCallback((*reinterpret_cast< QByteArray(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
-        case 10: _t->dataUnpackCpltCallback((*reinterpret_cast< Frame_Data_U2C_t(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
-        case 11: _t->dataUnpackCpltCallback((*reinterpret_cast< Frame_Data_C2U_t(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
-        case 12: _t->dataUnpackCpltCallback((*reinterpret_cast< Frame_Data_U2I_t(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
-        case 13: _t->dataUnpackCpltCallback((*reinterpret_cast< Frame_Data_I2U_t(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
-        case 14: _t->dataUnpackCpltCallback((*reinterpret_cast< Frame_Data_C2I_t(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
-        case 15: _t->dataUnpackCpltCallback((*reinterpret_cast< Frame_Data_I2C_t(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
+        case 8: _t->startThreadSlot(); break;
+        case 9: _t->txCpltCallback((*reinterpret_cast< int64_t(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
+        case 10: _t->rxCpltCallback((*reinterpret_cast< QByteArray(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
+        case 11: _t->dataUnpackCpltCallback((*reinterpret_cast< Frame_Data_U2C_t(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
+        case 12: _t->dataUnpackCpltCallback((*reinterpret_cast< Frame_Data_C2U_t(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
+        case 13: _t->dataUnpackCpltCallback((*reinterpret_cast< Frame_Data_U2I_t(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
+        case 14: _t->dataUnpackCpltCallback((*reinterpret_cast< Frame_Data_I2U_t(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
+        case 15: _t->dataUnpackCpltCallback((*reinterpret_cast< Frame_Data_C2I_t(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
+        case 16: _t->dataUnpackCpltCallback((*reinterpret_cast< Frame_Data_I2C_t(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -232,13 +237,13 @@ int Serial_System::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 16)
+        if (_id < 17)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 16;
+        _id -= 17;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 16)
+        if (_id < 17)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 16;
+        _id -= 17;
     }
     return _id;
 }

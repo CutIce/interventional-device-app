@@ -4,6 +4,9 @@
 #include <QList>
 #include "serial.h"
 #include "protocol.h"
+#include <QDebug>
+#include <QThread>
+
 
 class Serial_System : public QObject
 {
@@ -44,7 +47,8 @@ public:
     Frame_Data_C2I_t rx_data_pack_c2i;
     Frame_Data_I2C_t rx_data_pack_i2c;
 
-private slots:
+public slots:
+    void startThreadSlot();
     void txCpltCallback(int64_t flag, QString port_name);
     void rxCpltCallback(QByteArray data, QString port_name);
 

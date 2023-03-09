@@ -22,8 +22,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a318bfd-10d1-4202-bffb-70b157506ac2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/serial/serial_com.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-qt-release/CMakeFiles/omega7_com.dir/src/serial/serial_system.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-qt-release/CMakeFiles/omega7_com.dir/src/serial/serial_system.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-qt-release/omega7_com_autogen/R7S332WNRB/moc_serial_system.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-qt-release/omega7_com_autogen/R7S332WNRB/moc_serial_system.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/mainwindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/mainwindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/omega_com.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/omega_com.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/serial/serial_system.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/serial/serial_system.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainwindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainwindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/omega_com.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/omega_com.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serial/serial_system.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/serial/serial_system.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +69,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Documents/23SP/graduation_project/qt_app/omega7_com/form&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Documents/23SP/graduation_project/qt_app/omega7_com&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -77,16 +85,16 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\form" />
+      <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\header\serial" />
+      <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\src\serial" />
       <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\src" />
       <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\header" />
-      <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\include\sdk" />
-      <recent name="E:\Documents\23SP\graduation_project\qt_app\omega7_com\include\serial_protocol" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="omega7_com" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="omega7_com" TARGET_NAME="omega7_com" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="omega7_com" RUN_TARGET_NAME="omega7_com">
@@ -126,6 +134,9 @@
       <workItem from="1678197562807" duration="835000" />
       <workItem from="1678240637253" duration="6816000" />
       <workItem from="1678256123901" duration="7532000" />
+      <workItem from="1678274210258" duration="7482000" />
+      <workItem from="1678327200959" duration="5330000" />
+      <workItem from="1678338367080" duration="8735000" />
     </task>
     <servers />
   </component>

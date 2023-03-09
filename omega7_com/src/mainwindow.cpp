@@ -129,6 +129,13 @@ mainwindow::mainwindow(QWidget *parent) :
 
     this->plotInit();
 
+    qS.m.phi = 0;
+    qS.m.x = 0;
+    qS.m.z = 0;
+    qS.n.phi = 0;
+    qS.n.x = 0;
+    qS.n.z = 0;
+
     //1ms定时器
     connect(&this->timer, SIGNAL(timeout()), this, SLOT(runSimulation()), Qt::UniqueConnection);
     timer.start(20);
@@ -140,18 +147,35 @@ mainwindow::mainwindow(QWidget *parent) :
     QObject::connect(this, &mainwindow::signal_qSnx, this->sd, &serial_demo::curve);
     QObject::connect(this, &mainwindow::signal_qSnz, this->sd, &serial_demo::slide);
 
-    sd->show();
+    QObject::connect(this->omega7_communicator, &Omega7_Communicator::signal_DSlide, this, &mainwindow::recvDSlide);
+    QObject::connect(this->omega7_communicator, &Omega7_Communicator::signal_DCurve, this, &mainwindow::recvDCurve);
+    QObject::connect(this->omega7_communicator, &Omega7_Communicator::signal_DRotate, this, &mainwindow::recvDRotate);
+
+    QObject::connect(this->omega7_communicator, &Omega7_Communicator::signal_Slide, this, &mainwindow::recvSlide);
+    QObject::connect(this->omega7_communicator, &Omega7_Communicator::signal_Curve, this, &mainwindow::recvCurve);
+    QObject::connect(this->omega7_communicator, &Omega7_Communicator::signal_Rotate, this, &mainwindow::recvRotate);
 
     // moveToThread
     omega7_communicator->moveToThread(omega_com_thread);
     sd->serial_system.moveToThread(serial_com_thread);
 
-    omega_com_thread->start();
-    serial_com_thread->start();
     //
+    QObject::connect(serial_com_thread, &QThread::started, &sd->serial_system, &Serial_System::startThreadSlot, Qt::UniqueConnection);
+    QObject::connect(serial_com_thread, &QThread::finished, serial_com_thread, &QThread::deleteLater, Qt::UniqueConnection);
+
+
     QObject::connect(this, &mainwindow::beginOmega7Communication, this->omega7_communicator, &Omega7_Communicator::continueQueryPose, Qt::UniqueConnection);
     QObject::connect(this, &mainwindow::stopOmega7Communication, this->omega7_communicator, &Omega7_Communicator::stopQueryPose, Qt::UniqueConnection);
+    QObject::connect(omega_com_thread, &QThread::finished, omega_com_thread, &QThread::deleteLater, Qt::UniqueConnection);
 
+    qDebug() << "MainWindow current thread ID : " << QThread::currentThreadId() << "\n";
+
+    emit beginOmega7Communication();
+
+    omega_com_thread->start();
+    serial_com_thread->start();
+
+    sd->show();
 
 }
 
@@ -378,4 +402,93 @@ void mainwindow::plotCatheter(Catheter_Geometry_Param_Group_t qG) {
         p_plot[i]->addCurve(&catheter_a);
         p_plot[i]->addCurve(&catheter_b);
     }
+}
+
+void mainwindow::recvDSlide(double data) {
+//    qS.m.phi = (float)pSlider_steer_control[0]->value()/5730;
+//    qS.m.x = (float)pSlider_steer_control[1]->value()/100;
+//    qS.m.z = (float)pSlider_steer_control[2]->value()/100;
+//    qS.n.phi = (float)pSlider_steer_control[3]->value()/5730;
+//    qS.n.x = (float)pSlider_steer_control[4]->value()/100;
+//    qS.n.z = (float)pSlider_steer_control[5]->value()/100;
+//
+//    //驱动空间数据发送到串口
+//    emit signal_qSmphi(qS.m.phi);
+//    emit signal_qSmx(qS.m.x);
+//    emit signal_qSmz(qS.m.z);
+//    emit signal_qSnphi(qS.n.phi);
+//    emit signal_qSnx(qS.n.x);
+//    emit signal_qSnz(qS.n.z);
+
+//    QObject::connect(this, &mainwindow::signal_qSmphi, this->sd, &serial_demo::Drotate);
+//    QObject::connect(this, &mainwindow::signal_qSmx, this->sd, &serial_demo::Dcurve);
+//    QObject::connect(this, &mainwindow::signal_qSmz, this->sd, &serial_demo::Dslide);
+//    QObject::connect(this, &mainwindow::signal_qSnphi, this->sd, &serial_demo::rotate);
+//    QObject::connect(this, &mainwindow::signal_qSnx, this->sd, &serial_demo::curve);
+//    QObject::connect(this, &mainwindow::signal_qSnz, this->sd, &serial_demo::slide);
+
+//
+//    QObject::connect(this->omega7_communicator, &Omega7_Communicator::signal_DSlide, this->sd, &serial_demo::Dslide);
+//    QObject::connect(this->omega7_communicator, &Omega7_Communicator::signal_DCurve, this->sd, &serial_demo::Dcurve);
+
+    qS.m.z = (float)data;
+    float d =  data;
+    pSlider_steer_control[2]->setValue((float)100 * d);
+//    qDebug() << "slot Dslide";
+}
+
+void mainwindow::recvDCurve(double data) {
+//    qS.m.phi = (float)pSlider_steer_control[0]->value()/5730;
+//    qS.m.x = (float)pSlider_steer_control[1]->value()/100;
+//    qS.m.z = (float)pSlider_steer_control[2]->value()/100;
+//    qS.n.phi = (float)pSlider_steer_control[3]->value()/5730;
+//    qS.n.x = (float)pSlider_steer_control[4]->value()/100;
+//    qS.n.z = (float)pSlider_steer_control[5]->value()/100;
+//
+//    //驱动空间数据发送到串口
+//    emit signal_qSmphi(qS.m.phi);
+//    emit signal_qSmx(qS.m.x);
+//    emit signal_qSmz(qS.m.z);
+//    emit signal_qSnphi(qS.n.phi);
+//    emit signal_qSnx(qS.n.x);
+//    emit signal_qSnz(qS.n.z);
+
+//    QObject::connect(this, &mainwindow::signal_qSmphi, this->sd, &serial_demo::Drotate);
+//    QObject::connect(this, &mainwindow::signal_qSmx, this->sd, &serial_demo::Dcurve);
+//    QObject::connect(this, &mainwindow::signal_qSmz, this->sd, &serial_demo::Dslide);
+//    QObject::connect(this, &mainwindow::signal_qSnphi, this->sd, &serial_demo::rotate);
+//    QObject::connect(this, &mainwindow::signal_qSnx, this->sd, &serial_demo::curve);
+//    QObject::connect(this, &mainwindow::signal_qSnz, this->sd, &serial_demo::slide);
+
+//
+//    QObject::connect(this->omega7_communicator, &Omega7_Communicator::signal_DSlide, this->sd, &serial_demo::Dslide);
+//    QObject::connect(this->omega7_communicator, &Omega7_Communicator::signal_DCurve, this->sd, &serial_demo::Dcurve);
+
+    qS.m.x = (float)data;
+    pSlider_steer_control[1]->setValue((float)100 * data);
+//    qDebug() << "DCurve";
+}
+
+void mainwindow::recvDRotate(double data) {
+//    qS.m.phi = data;
+    pSlider_steer_control[0]->setValue((float)data);
+}
+
+void mainwindow::recvRotate(double data) {
+//    qS.n.phi = (float)pSlider_steer_control[3]->value()/5730;
+//    qS.n.x = (float)pSlider_steer_control[4]->value()/100;
+//    qS.n.z = (float)pSlider_steer_control[5]->value()/100;
+    pSlider_steer_control[3]->setValue((float)data * 100.);
+}
+
+void mainwindow::recvSlide(double data) {
+//    qS.m.phi = data;
+    pSlider_steer_control[0]->setValue((float)data);
+    qDebug() << "DRotate" << data;
+}
+
+void mainwindow::recvCurve(double data) {
+//    qS.m.phi = data;
+    pSlider_steer_control[0]->setValue((float)data);
+    qDebug() << "DRotate" << data;
 }

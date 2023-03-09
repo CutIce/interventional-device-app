@@ -1,8 +1,9 @@
 #include "../header/serial/serial_system.h"
 
+
 Serial_System::Serial_System(void)
 {
-
+//    qDebug() << "current thread ID : " << QThread::currentThreadId() << "\n";
 }
 
 /**
@@ -307,3 +308,6 @@ void Serial_System::dataUnpackCpltCallback(Frame_Data_I2C_t data, QString port_n
     emit this->signal_DataUnpackCplt(data, port_name);
 }
 
+void Serial_System::startThreadSlot() {
+    qDebug() << "Serial_Communicator current thread ID : " << QThread::currentThreadId() << "\n";
+}

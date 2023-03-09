@@ -11,6 +11,7 @@
 #include "sdk/dhdc.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <QDebug>
 
 #define _USE_MATH_DEFINES
 #include <math.h>
@@ -18,8 +19,7 @@
 #include <Eigen/Eigen>
 using namespace Eigen;
 
-#define REFRESH_INTERVAL 0.1
-#define REFRESH_INTERVAL  0.1   // sec
+#define REFRESH_INTERVAL  0.01   // sec
 #define KP    100.0
 #define KVP    10.0
 #define MAXF    4.0
@@ -62,6 +62,7 @@ class Omega7_Communicator: public QObject {
     int encNum;
     int sat;
     int spring;
+    double last_pose[6];
     double pose[6];
     double grip;
     double force[3];
@@ -82,6 +83,16 @@ public:
 signals:
     void sendData(double* pose);
     void finishWork();
+    void signal_DSlide(double data);
+    void signal_DCurve(double data);
+    void signal_DRotate(double data);
+    void signal_Slide(double data);
+    void signal_Curve(double data);
+    void signal_Rotate(double data);
+
+//    QObject::connect(this, &mainwindow::signal_qSmphi, this->sd, &serial_demo::Drotate);
+//    QObject::connect(this, &mainwindow::signal_qSmx, this->sd, &serial_demo::Dcurve);
+//    QObject::connect(this, &mainwindow::signal_qSmz, this->sd, &serial_demo::Dslide);
 
 public slots:
     void continueQueryPose();

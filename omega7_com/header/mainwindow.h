@@ -10,6 +10,7 @@
 #include <QTimer>
 #include <QWidget>
 #include <QtCore>
+#include <QDebug>
 
 #include "QPlot3D.h"
 #include "../header/omega_com.h"
@@ -58,6 +59,7 @@ public:
     Omega7_Communicator *omega7_communicator = new Omega7_Communicator;
     serial_demo *sd = new serial_demo;
 
+
     explicit mainwindow(QWidget *parent = nullptr);
     ~mainwindow() override;
     void plotInit(void);
@@ -83,6 +85,13 @@ signals:
 
 
 public slots:
+    void recvDSlide(double data);
+    void recvDCurve(double data);
+    void recvDRotate(double data);
+    void recvSlide(double data);
+    void recvCurve(double data);
+    void recvRotate(double data);
+
     void runSimulation(void);
 };
 

@@ -16,7 +16,7 @@ Omega7_Communicator::Omega7_Communicator(QObject *parent) {
 
     QObject::connect(&this->timer, &QTimer::timeout, this, &Omega7_Communicator::loop, Qt::UniqueConnection);
 
-    timer.start(1);
+    timer.start(10);
 }
 
 Omega7_Communicator::~Omega7_Communicator() noexcept {
@@ -26,6 +26,8 @@ Omega7_Communicator::~Omega7_Communicator() noexcept {
 }
 
 void Omega7_Communicator::continueQueryPose() {
+//    qDebug() << "omega7_communicator current thread ID : " << QThread::currentThreadId() << "\n";
+
     // required to access joint angles
     dhdEnableExpertMode ();
 
@@ -109,19 +111,41 @@ void Omega7_Communicator::continueQueryPose() {
             // retrieve information to display
             freq = dhdGetComFreq ();
             t0   = t1;
-
+            last_pose[0] = pose[0];
+            last_pose[1] = pose[1];
+            last_pose[2] = pose[2];
+            last_pose[3] = pose[3];
+            last_pose[4] = pose[4];
+            last_pose[5] = pose[5];
             // write down position
             if (dhdGetPositionAndOrientationDeg(&pose[0], &pose[1], &pose[2], &pose[3], &pose[4], &pose[5]) < 0) {
                 printf ("error: cannot read position (%s)\n", dhdErrorGetLastStr());
                 done = 1;
             }
-            if (sat == DHD_MOTOR_SATURATED) printf ("[*] ");
-            else                            printf ("[-] ");
+
+
+//            if (sat == DHD_MOTOR_SATURATED) printf ("[*] ");
+//            else                            printf ("[-] ");
+//            qDebug() << "omega7_communicator current thread ID : " << QThread::currentThreadId();
             printf ("q = (%+0.03f, %+0.03f, %+0.03f) [Nm]  |  freq = %0.02f [kHz]   px = %+0.03f, py = %+0.03f, pz = %+0.03f, oa = %+0.03f, ob = %+0.03f, og = %+0.03f    \n", q0, q1, q2, freq, pose[0], pose[1], pose[2], pose[3], pose[4], pose[5]);
 
             // user input
             if (dhdGetButtonMask()) spring = true;
             else                    spring = false;
+
+//            double dx = 1000000 * (-pose[0] + last_pose[0]);
+//            double dy = 10000 * (-pose[1] + last_pose[1]);
+//            double dz = 10 * (pose[2] - last_pose[2]);
+
+            double dx = (pose[0] + 0.05) * 10 * 24;
+            double dy = abs(pose[1]) * 100;
+            double Dr = 100 * pose[3];
+
+//            qDebug() << "dx = " << dx << ", dy = " << dy;
+            emit signal_DSlide(dx);
+            emit signal_DCurve(dy);
+            emit signal_DRotate(Dr);
+
         }
     }
 
@@ -136,4 +160,15 @@ void Omega7_Communicator::stopQueryPose() {
 
 void Omega7_Communicator::loop() {
     emit sendData(pose);
+
+
+    double dx = -pose[0] + last_pose[0];
+    double dy = -pose[1] + last_pose[1];
+    double dz = pose[2] - last_pose[2];
+
+//    qDebug() << "dx = " << dx << ", dy = " << dy << "\n";
+    emit signal_DSlide(dx);
+    emit signal_DCurve(dy);
+//    emit signal_DRotate()
+
 }

@@ -127,7 +127,7 @@ void Omega7_Communicator::continueQueryPose() {
 //            if (sat == DHD_MOTOR_SATURATED) printf ("[*] ");
 //            else                            printf ("[-] ");
 //            qDebug() << "omega7_communicator current thread ID : " << QThread::currentThreadId();
-            printf ("q = (%+0.03f, %+0.03f, %+0.03f) [Nm]  |  freq = %0.02f [kHz]   px = %+0.03f, py = %+0.03f, pz = %+0.03f, oa = %+0.03f, ob = %+0.03f, og = %+0.03f    \n", q0, q1, q2, freq, pose[0], pose[1], pose[2], pose[3], pose[4], pose[5]);
+//            printf ("q = (%+0.03f, %+0.03f, %+0.03f) [Nm]  |  freq = %0.02f [kHz]   px = %+0.03f, py = %+0.03f, pz = %+0.03f, oa = %+0.03f, ob = %+0.03f, og = %+0.03f    \n", q0, q1, q2, freq, pose[0], pose[1], pose[2], pose[3], pose[4], pose[5]);
 
             // user input
             if (dhdGetButtonMask()) spring = true;
@@ -137,15 +137,22 @@ void Omega7_Communicator::continueQueryPose() {
 //            double dy = 10000 * (-pose[1] + last_pose[1]);
 //            double dz = 10 * (pose[2] - last_pose[2]);
 
-            double dx = (pose[0] + 0.05) * 10 * 24;
-            double dy = abs(pose[1]) * 100;
-            double Dr = 100 * pose[3];
+            double dslide = (pose[0] + 0.05) * 10 * 24 * 100;
+            double dcurve = abs(pose[1]) * 10 * 1000;
+            double drotate = 100 * pose[3];
+
+            double slide = (pose[2] + 0.075) * 10 * 24 * 100;
+            double curve = (pose[4]) / 70 * 12 * 100;
+            double rotate = 80 * pose[5];
 
 //            qDebug() << "dx = " << dx << ", dy = " << dy;
-            emit signal_DSlide(dx);
-            emit signal_DCurve(dy);
-            emit signal_DRotate(Dr);
+            emit signal_DSlide(dslide);
+            emit signal_DCurve(dcurve);
+            emit signal_DRotate(drotate);
 
+            emit signal_Slide(slide);
+            emit signal_Curve(curve);
+            emit signal_Rotate(rotate);
         }
     }
 

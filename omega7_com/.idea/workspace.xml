@@ -22,16 +22,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a318bfd-10d1-4202-bffb-70b157506ac2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/serial/serial_com.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-qt-release/CMakeFiles/omega7_com.dir/src/serial/serial_system.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-qt-release/CMakeFiles/omega7_com.dir/src/serial/serial_system.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-qt-release/omega7_com_autogen/R7S332WNRB/moc_serial_system.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-qt-release/omega7_com_autogen/R7S332WNRB/moc_serial_system.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/mainwindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/mainwindow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/omega_com.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/omega_com.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header/serial/serial_system.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/serial/serial_system.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainwindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainwindow.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/omega_com.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/omega_com.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serial/serial_system.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/serial/serial_system.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +129,7 @@
       <workItem from="1678256123901" duration="7532000" />
       <workItem from="1678274210258" duration="7482000" />
       <workItem from="1678327200959" duration="5330000" />
-      <workItem from="1678338367080" duration="8735000" />
+      <workItem from="1678338367080" duration="10942000" />
     </task>
     <servers />
   </component>

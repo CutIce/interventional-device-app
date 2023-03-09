@@ -405,68 +405,12 @@ void mainwindow::plotCatheter(Catheter_Geometry_Param_Group_t qG) {
 }
 
 void mainwindow::recvDSlide(double data) {
-//    qS.m.phi = (float)pSlider_steer_control[0]->value()/5730;
-//    qS.m.x = (float)pSlider_steer_control[1]->value()/100;
-//    qS.m.z = (float)pSlider_steer_control[2]->value()/100;
-//    qS.n.phi = (float)pSlider_steer_control[3]->value()/5730;
-//    qS.n.x = (float)pSlider_steer_control[4]->value()/100;
-//    qS.n.z = (float)pSlider_steer_control[5]->value()/100;
-//
-//    //驱动空间数据发送到串口
-//    emit signal_qSmphi(qS.m.phi);
-//    emit signal_qSmx(qS.m.x);
-//    emit signal_qSmz(qS.m.z);
-//    emit signal_qSnphi(qS.n.phi);
-//    emit signal_qSnx(qS.n.x);
-//    emit signal_qSnz(qS.n.z);
-
-//    QObject::connect(this, &mainwindow::signal_qSmphi, this->sd, &serial_demo::Drotate);
-//    QObject::connect(this, &mainwindow::signal_qSmx, this->sd, &serial_demo::Dcurve);
-//    QObject::connect(this, &mainwindow::signal_qSmz, this->sd, &serial_demo::Dslide);
-//    QObject::connect(this, &mainwindow::signal_qSnphi, this->sd, &serial_demo::rotate);
-//    QObject::connect(this, &mainwindow::signal_qSnx, this->sd, &serial_demo::curve);
-//    QObject::connect(this, &mainwindow::signal_qSnz, this->sd, &serial_demo::slide);
-
-//
-//    QObject::connect(this->omega7_communicator, &Omega7_Communicator::signal_DSlide, this->sd, &serial_demo::Dslide);
-//    QObject::connect(this->omega7_communicator, &Omega7_Communicator::signal_DCurve, this->sd, &serial_demo::Dcurve);
-
-    qS.m.z = (float)data;
-    float d =  data;
-    pSlider_steer_control[2]->setValue((float)100 * d);
-//    qDebug() << "slot Dslide";
+    pSlider_steer_control[2]->setValue((float)data);
 }
 
 void mainwindow::recvDCurve(double data) {
-//    qS.m.phi = (float)pSlider_steer_control[0]->value()/5730;
-//    qS.m.x = (float)pSlider_steer_control[1]->value()/100;
-//    qS.m.z = (float)pSlider_steer_control[2]->value()/100;
-//    qS.n.phi = (float)pSlider_steer_control[3]->value()/5730;
-//    qS.n.x = (float)pSlider_steer_control[4]->value()/100;
-//    qS.n.z = (float)pSlider_steer_control[5]->value()/100;
-//
-//    //驱动空间数据发送到串口
-//    emit signal_qSmphi(qS.m.phi);
-//    emit signal_qSmx(qS.m.x);
-//    emit signal_qSmz(qS.m.z);
-//    emit signal_qSnphi(qS.n.phi);
-//    emit signal_qSnx(qS.n.x);
-//    emit signal_qSnz(qS.n.z);
-
-//    QObject::connect(this, &mainwindow::signal_qSmphi, this->sd, &serial_demo::Drotate);
-//    QObject::connect(this, &mainwindow::signal_qSmx, this->sd, &serial_demo::Dcurve);
-//    QObject::connect(this, &mainwindow::signal_qSmz, this->sd, &serial_demo::Dslide);
-//    QObject::connect(this, &mainwindow::signal_qSnphi, this->sd, &serial_demo::rotate);
-//    QObject::connect(this, &mainwindow::signal_qSnx, this->sd, &serial_demo::curve);
-//    QObject::connect(this, &mainwindow::signal_qSnz, this->sd, &serial_demo::slide);
-
-//
-//    QObject::connect(this->omega7_communicator, &Omega7_Communicator::signal_DSlide, this->sd, &serial_demo::Dslide);
-//    QObject::connect(this->omega7_communicator, &Omega7_Communicator::signal_DCurve, this->sd, &serial_demo::Dcurve);
-
     qS.m.x = (float)data;
-    pSlider_steer_control[1]->setValue((float)100 * data);
-//    qDebug() << "DCurve";
+    pSlider_steer_control[1]->setValue((float)data);
 }
 
 void mainwindow::recvDRotate(double data) {
@@ -475,20 +419,18 @@ void mainwindow::recvDRotate(double data) {
 }
 
 void mainwindow::recvRotate(double data) {
-//    qS.n.phi = (float)pSlider_steer_control[3]->value()/5730;
-//    qS.n.x = (float)pSlider_steer_control[4]->value()/100;
-//    qS.n.z = (float)pSlider_steer_control[5]->value()/100;
-    pSlider_steer_control[3]->setValue((float)data * 100.);
+    pSlider_steer_control[3]->setValue((float)data);
 }
 
 void mainwindow::recvSlide(double data) {
 //    qS.m.phi = data;
-    pSlider_steer_control[0]->setValue((float)data);
-    qDebug() << "DRotate" << data;
+    pSlider_steer_control[5]->setValue((float)data);
 }
 
 void mainwindow::recvCurve(double data) {
-//    qS.m.phi = data;
-    pSlider_steer_control[0]->setValue((float)data);
-    qDebug() << "DRotate" << data;
+    pSlider_steer_control[4]->setValue((float)data);
 }
+
+//qS.n.phi = (float)pSlider_steer_control[3]->value()/5730;
+//qS.n.x = (float)pSlider_steer_control[4]->value()/100;
+//qS.n.z = (float)pSlider_steer_control[5]->value()/100;
